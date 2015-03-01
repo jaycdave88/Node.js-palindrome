@@ -15,4 +15,4 @@ c. Open 'Terminal' and verify install, 'node --version'
 Steps to run:
 1. Open 'Terminal'
 2. Enter command, 'node [PATH_TO_PALINDOME_CODE]'
-3. To exit script, 'Control + C'
+3. To exit script, enter 'exit' or Control + C
