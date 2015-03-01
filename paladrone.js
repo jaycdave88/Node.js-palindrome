@@ -1,16 +1,16 @@
 console.log("Please enter some text!!")
 var sys = require("sys");
 var stdin = process.openStdin();
-stdin.addListener("data", function(user_inputed_word){
-	var user_string = user_inputed_word.toString().substring(0,user_inputed_word.length-1);
-	if(user_string === "exit"){
+stdin.addListener("data", function(userInputedWord){
+	var userString = userInputedWord.toString().substring(0,userInputedWord.length-1);
+	if(userString === "exit"){
 		process.kill();
 	}else{
-		var user_string_paladrone = user_string.split('').reverse().join('');
-		if(user_string === user_string_paladrone){
-			console.log(user_string_paladrone + " is a palindrome!")
+		var userStringPaladrone = userString.split('').reverse().join('');
+		if(userString === userStringPaladrone){
+			console.log(userStringPaladrone + " is a palindrome!")
 		}else{
-			console.log("Sorry!! Looks like " + user_string + " is not a palindrome.")
+			console.log("Sorry!! Looks like " + userString + " is not a palindrome.")
 		};
 	};
 });
